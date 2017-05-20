@@ -1,0 +1,19 @@
+﻿private Foundation.NSUrl url;
+
+		private void CallNumber(string phoneNumber)
+		{
+			url = new Foundation.NSUrl("tel:" + phoneNumber);
+			var alert = UIAlertController.Create("Alert", "Simulated call to  " + phoneNumber, UIAlertControllerStyle.Alert);
+
+			alert.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, null));
+			alert.AddAction(UIAlertAction.Create("Cancel", UIAlertActionStyle.Cancel, null));
+			PresentViewController(alert, true, null);
+		
+		}
+
+
+         partial void CalcButton_TouchUpInside(UIButton sender)
+        {
+            double duration = CalculateTourDuration(numberOfStops: 2, speedRatio: 1.2);
+            DurationResult.Text = String.Format("{0} minutes", duration);
+        }

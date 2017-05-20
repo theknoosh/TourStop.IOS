@@ -1,0 +1,4 @@
+﻿private void MakeCallAction(UIAlertAction action)
+		{
+			bool wasSuccessful = UIApplication.SharedApplication.OpenUrl(url);
+		}

@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourStop.IOS", "TourStop.IOS\TourStop.IOS.csproj", "{1349C7E4-04AF-4873-9827-28B4ED3584BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourLib.IOS", "TourLib.IOS\TourLib.IOS.csproj", "{F6FC73CA-47F5-479F-8CD2-2D0E5789318F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1349C7E4-04AF-4873-9827-28B4ED3584BA}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{1349C7E4-04AF-4873-9827-28B4ED3584BA}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{1349C7E4-04AF-4873-9827-28B4ED3584BA}.Release|iPhone.ActiveCfg = Release|iPhone
+		{1349C7E4-04AF-4873-9827-28B4ED3584BA}.Release|iPhone.Build.0 = Release|iPhone
+		{1349C7E4-04AF-4873-9827-28B4ED3584BA}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{1349C7E4-04AF-4873-9827-28B4ED3584BA}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{1349C7E4-04AF-4873-9827-28B4ED3584BA}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{1349C7E4-04AF-4873-9827-28B4ED3584BA}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F6FC73CA-47F5-479F-8CD2-2D0E5789318F}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F6FC73CA-47F5-479F-8CD2-2D0E5789318F}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F6FC73CA-47F5-479F-8CD2-2D0E5789318F}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{F6FC73CA-47F5-479F-8CD2-2D0E5789318F}.Release|iPhone.Build.0 = Release|Any CPU
+		{F6FC73CA-47F5-479F-8CD2-2D0E5789318F}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F6FC73CA-47F5-479F-8CD2-2D0E5789318F}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F6FC73CA-47F5-479F-8CD2-2D0E5789318F}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{F6FC73CA-47F5-479F-8CD2-2D0E5789318F}.Debug|iPhone.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

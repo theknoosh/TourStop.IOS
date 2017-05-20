@@ -1,0 +1,8 @@
+﻿private const int TimePerStop = 45; // minutes
+private double CalculateTourDuration(int numberOfStops, double speedRatio) {
+			// some code for debugging demo
+
+			var temp = numberOfStops;
+			var duration = (numberOfStops * TimePerStop) * speedRatio;
+			return duration;
+		}
