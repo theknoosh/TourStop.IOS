@@ -8,15 +8,7 @@ namespace TourStop.IOS
     {
        
 
-        partial void CallButton2_TouchUpInside(UIButton sender)
-        {
-            CallNumber("555-2424");
-        }
-
-        partial void CallButton1_TouchUpInside(UIButton sender)
-        {
-			CallNumber("555-1212");
-		}
+       
 
 		private Foundation.NSUrl url;
 
