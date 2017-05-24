@@ -73,6 +73,7 @@
                     <connections>
                         <outlet property="CalcButton" destination="58" id="name-outlet-58"/>
                         <outlet property="DurationResult" destination="59" id="name-outlet-59"/>
+                        <outlet property="TableView1" destination="86" id="name-outlet-86"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

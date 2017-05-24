@@ -21,6 +21,10 @@ namespace TourStop.IOS
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel DurationResult { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView TableView1 { get; set; }
+
         [Action ("CalcButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void CalcButton_TouchUpInside (UIKit.UIButton sender);
@@ -35,6 +39,11 @@ namespace TourStop.IOS
             if (DurationResult != null) {
                 DurationResult.Dispose ();
                 DurationResult = null;
+            }
+
+            if (TableView1 != null) {
+                TableView1.Dispose ();
+                TableView1 = null;
             }
         }
     }

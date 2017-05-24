@@ -109,6 +109,7 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="TourStopTableCell.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TourLib.IOS\TourLib.IOS.csproj">
