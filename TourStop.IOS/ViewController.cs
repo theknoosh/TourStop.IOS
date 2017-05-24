@@ -6,29 +6,7 @@ namespace TourStop.IOS
 {
     public partial class ViewController : UIViewController
     {
-       
-
-       
-
-		private Foundation.NSUrl url;
-
-		private void CallNumber(string phoneNumber)
-		{
-			url = new Foundation.NSUrl("tel:" + phoneNumber);
-			var alert = UIAlertController.Create("Alert", "Simulated call to  " + phoneNumber, UIAlertControllerStyle.Alert);
-
-			alert.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, MakeCallAction));
-			alert.AddAction(UIAlertAction.Create("Cancel", UIAlertActionStyle.Cancel, MakeCallAction));
-			PresentViewController(alert, true, null);
-
-		}
-
-		private void MakeCallAction(UIAlertAction action)
-		{
-			bool wasSuccessful = UIApplication.SharedApplication.OpenUrl(url);
-		}
-
-
+        
 		private const int TimePerStop = 45; // minutes
 		private double CalculateTourDuration(int numberOfStops, double speedRatio)
 		{
@@ -41,9 +19,11 @@ namespace TourStop.IOS
 
         partial void CalcButton_TouchUpInside(UIButton sender)
         {
-            var duration = new TourLib.Duration();
-            double result = duration.CalculateTourDuration(numberOfStops: 2, speedRatio: 1.2);
-			DurationResult.Text = String.Format("{0} minutes", result);
+			var numberOfStops = TableView1.NumberOfRowsInSection(0);
+			var duration = new TourLib.Duration();
+			double result = duration.CalculateTourDuration(numberOfStops: (int)numberOfStops,
+																								speedRatio: 1.2);
+            DurationResult.Text = String.Format("{0} minutes", result);
         }
 
         protected ViewController(IntPtr handle) : base(handle)
@@ -55,6 +35,7 @@ namespace TourStop.IOS
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
+            TableView1.Source = new TourStopsTableSource();
         }
 
         public override void DidReceiveMemoryWarning()

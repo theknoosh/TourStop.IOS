@@ -1,0 +1,8 @@
+﻿partial void CalculateButton_TouchUpInside(UIButton sender) {
+
+			var numberOfStops = TableView1.NumberOfRowsInSection(0);
+			var duration = new TourLib.Duration();
+			double result = duration.CalculateTourDuration(numberOfStops: (int) numberOfStops,
+																								speedRatio: 1.2);
+			DurationMessage.Text = String.Format("{0} minutes", result);
+		}

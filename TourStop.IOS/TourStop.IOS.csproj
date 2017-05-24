@@ -101,6 +101,7 @@
     <None Include="CalculateDuration.txt" />
     <None Include="CallNumber.txt" />
     <None Include="MakeCallAction.txt" />
+    <None Include="CalcButtonTouch.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -110,6 +111,7 @@
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="TourStopTableCell.cs" />
+    <Compile Include="TourStopsTableSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TourLib.IOS\TourLib.IOS.csproj">

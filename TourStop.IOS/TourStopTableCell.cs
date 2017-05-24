@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using UIKit;
 
-namespace TourStops.iOS {
+namespace TourStop.IOS {
 	class TourStopTableCell : UITableViewCell {
 		UILabel nameLabel;
 		UIButton mapButton, callButton;
