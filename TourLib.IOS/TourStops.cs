@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
+
 namespace TourLib {
 	public class TourSource {
 		private static List<TourStop> _tourStops;
@@ -35,8 +37,8 @@ namespace TourLib {
 			{
 				StopNumber = 3,
 				Name = "Art Institute of Chicago",
-				Latitude = "41.867345",
-				Longitude = "-87.628414",
+				Latitude = "41.880074", 
+				Longitude = "-87.622147",
 				Phone = "555-9115",
 				Description = "The Art Institute of Chicago is an art museum located in Chicago's Grant Park. It features a collection of Impressionist and Post-Impressionist art in its permanent collection."
 
@@ -96,6 +98,11 @@ namespace TourLib {
 				Description = "Crown Fountain is an interactive video sculpture/monument featuring a playful water stream."
 
 			});
+		}
+
+		public static List<TourStop> GetAllTourStops() {
+			var result = _tourStops.ToList<TourStop>();
+			return result;
 		}
 		public static List<TourStop> GetTourStops(int count) {
 			var result = _tourStops.Take(count).ToList<TourStop>();
